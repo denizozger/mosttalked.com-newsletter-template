@@ -76,11 +76,23 @@ a {
 .padding {
 	padding: 10px 0;
 }
-
+    
 .seperator {
-    height: 3em;
-    background-color: #2ED5E4;
-    border-radius: 4px;
+    margin-top: 20px;
+    height: 2em;
+    background-color: #2ED5E4; 
+    border-radius: 2px;
+    text-align: center;
+}
+    
+.seperator span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+    
+.signature {
+    margin-top: 30px;
 }
 
 
@@ -96,23 +108,19 @@ table.body-wrap .container {
 	border: 1px solid #f0f0f0;
 }
 
-article {
-    margin-bottom: 20px;
-}
-
 
 /* -------------------------------------
 		FOOTER
 ------------------------------------- */
 table.footer-wrap {
-	width: 100%;
+	width: 100%;	
 	clear: both!important;
 }
 
 .footer-wrap .container p {
 	font-size: 12px;
 	color: #666;
-
+	
 }
 
 table.footer-wrap a {
@@ -149,9 +157,14 @@ p, ul, ol {
 	font-size: 14px;
 }
 
-ul li, ol li {
+ul li, ol li {  
 	margin-left: 5px;
 	list-style-position: inside;
+}
+    
+ul {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
 }
 
 /* ---------------------------------------------------
@@ -202,8 +215,18 @@ ul li, ol li {
 					<td>
                         <img src="http://f.cl.ly/items/382X2B2E0N0G1N0J2q3U/Screen%20Shot%202014-05-14%20at%2014.00.36.png">
 						<h1>Top news and tweets on 14th May 2014</h1>
-
-                        <article>
+                        
+                        <h2>tl;dr</h2>
+                        
+                        <ul>
+                            <li><a href="#article-one">Over 200 dead, many trapped in Turkish coal mine</a></li>
+                            <li><a href="#article-two">Boko Haram leader offers to free schoolgirls in exchange for prisoners</a></li>
+                            <li><a href="#article-three">Christopher Columbus Ship The Santa Maria May Have Been Found</a></li>
+                        </ul>
+                        
+                        <div class="seperator"><span></span></div>
+                        
+                        <article id="article-one">
                             <h2>Over 200 dead, many trapped in Turkish coal mine
     </h2>
                             <img src="http://www.gannett-cdn.com/-mm-/8f6f4afb56eac803246991f59e97bc65feb5a853/c=70-0-1993-1447&r=x513&c=680x510/local/-/media/USATODAY/USATODAY/2014/05/14//1400082936002-turkey051414-010.jpg">
@@ -227,10 +250,10 @@ ul li, ol li {
                                 </tr>
                             </table>
                         </article>
-
-                        <div class="seperator"></div>
-
-                        <article>
+                        
+                        <div class="seperator"><span></span></div>
+                        
+                        <article id="article-two">
                             <h2>Boko Haram leader offers to free schoolgirls in exchange for prisoners
     </h2>
                             <img src="http://news.bbcimg.co.uk/media/images/74808000/jpg/_74808616_74808547.jpg">
@@ -254,10 +277,10 @@ ul li, ol li {
                                 </tr>
                             </table>
                         </article>
-
-                        <div class="seperator"></div>
-
-                        <article>
+                        
+                        <div class="seperator"><span></span></div>
+                        
+                        <article id="article-three">
                             <h2>Christopher Columbus Ship The Santa Maria May Have Been Found</h2>
                             <img src="http://media.npr.org/assets/img/2014/05/13/santa_maria_wide-a427ce9db0aac9d9e04aa521762c6e80d383260e-s40-c85.jpg">
                             <p></p>
@@ -276,14 +299,24 @@ ul li, ol li {
 							</tr>
 						</table>
                         </article>
-
-						<p><a href="http://twitter.com/MostTalkedLive">Follow @MostTalkedLive on Twitter</a></p>
+                        
+                        <div class="seperator"><span></span></div>
+                        
+                        <h1>That's all for today!</h1>
+                        
+                        <p>If you want to be notified of these news as they occur, <a href="http://twitter.com/MostTalkedLive">follow @MostTalkedLive on Twitter!</a></p>
+                        
+                        <h2>Can we do anything better?</h2>
+                        <p>We want you the receive the best possible news digest, let us know what you want to see: <a href="mailto:team@parallelbrains.com?Subject=Newsletter feedback" target="_top">team@parallelbrains.com</a></p>
+                        
+						<p class="signature">Lots of love,</p>
+                        <p>Bilsay, Deniz, Omer</p>
 					</td>
 				</tr>
 			</table>
 			</div>
 			<!-- /content -->
-
+			
 		</td>
 		<td></td>
 	</tr>
@@ -291,32 +324,31 @@ ul li, ol li {
 <!-- /body -->
 
 <!-- footer -->
-<!-- Footer is commented out as we use Mailchimp, which adds unsubscribe link automatically -->
-<!--<table class="footer-wrap">-->
-<!--	<tr>-->
-<!--		<td></td>-->
-<!--		<td class="container">-->
-
-			<!-- content -->
-<!--			<div class="content">-->
-<!--				<table>-->
-<!--					<tr>-->
-<!--						<td align="center">-->
-<!--							<p>Don't like these emails? <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.-->
-<!--							</p>-->
-<!--						</td>-->
-<!--					</tr>-->
-<!--				</table>-->
-<!--			</div>-->
-			<!-- /content -->
-
-<!--		</td>-->
-<!--		<td></td>-->
-<!--	</tr>-->
-<!--</table>-->
+<!-- disabling footer as mailchimp adds one already
+<table class="footer-wrap">
+	<tr>
+		<td></td>
+		<td class="container">
+			
+			<div class="content">
+				<table>
+					<tr>
+						<td align="center">
+							<p>Don't like these emails? <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+		</td>
+		<td></td>
+	</tr>
+</table>
+end of disable -->
 <!-- /footer -->
 
 <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+    
 </body>
 </html>
