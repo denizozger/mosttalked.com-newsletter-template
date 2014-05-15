@@ -1,29 +1,13 @@
-# Really Simple Responsive HTML Email Template
+# MostTalked.com Daily Digest Email Template
 
-Sometimes all you want is a really simple HTML email template. Here it is.
+See the preview here: http://denizozger.github.io/mosttalked.com-newsletter-template/
 
-Preview: http://leemunroe.github.io/html-email-template/email.html
+### Issues and solutions
 
-### Sending emails using a marketing service like Campaign Monitor or Mailchimp?
+MailChimp does not allow tweets to be embedded, they recommend taking a screenshot of the tweet and linking it to the actual tweet (https://longreply.com/r/4e15cd67).
 
-Use the template as is. They'll put the CSS inline for you when you put together your campaign.
+If this newsletter gains traction, I'm planning to setup an SMTP server, get all subscribers by MailChimp API, and send them HTML emails via a basic - say Node.js - application. 
 
+### Thanks
 
-### Sending emails directly from your app or using a developer service like Mailgun?
-
-For an API like [Mailgun](http://www.mailgun.com)  you need to put the CSS inline. You can use [Premailer](http://premailer.dialect.ca/) to do this automatically.
-
-* Copy all of email.html
-* Paste the HTML as the source into Premailer
-* Copy the HTML results and use them in your email view/template
-
-Note that some services may allow you to opt into CSS inlining, such as
-[Mandrill](http://help.mandrill.com/entries/24460141-Does-Mandrill-inline-CSS-automatically-).
-
-### Tried and tested
-
-Tested on all major email clients. Mobile, desktop and web. 
-
-<img src="http://i.imgur.com/TtYvCTr.jpg" alt="Email preview" width="800">
-
-Hat tip to Zurb's [Ink](http://zurb.com/ink/) for their awesome collection of email templates, which this was adapted from.
+Forked from https://github.com/leemunroe/html-email-template
