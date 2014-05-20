@@ -1,6 +1,6 @@
 # MostTalked.com Daily Digest Email Template
 
-See the preview here: http://denizozger.github.io/mosttalked.com-newsletter-template/
+See the preview here: http://denizozger.github.io/mosttalked.com-newsletters/
 
 ### Issues and solutions
 
