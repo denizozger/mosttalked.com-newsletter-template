@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Really Simple HTML Email Template</title>
+<style>
+/* -------------------------------------
+		GLOBAL
+------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.6;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+	width: 100%!important;
+	height: 100%;
+}
+
+
+/* -------------------------------------
+		ELEMENTS
+------------------------------------- */
+a {
+	color: #348eda;
+}
+
+.btn-primary {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #348eda;
+	border: solid #348eda;
+	border-width: 10px 20px;
+	line-height: 2;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+.btn-secondary {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #aaa;
+	border: solid #aaa;
+	border-width: 10px 20px;
+	line-height: 2;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+.last {
+	margin-bottom: 0;
+}
+
+.first {
+	margin-top: 0;
+}
+
+.padding {
+	padding: 10px 0;
+}
+    
+.seperator {
+    margin-top: 20px;
+    height: 2em;
+    background-color: #2ED5E4; 
+    border-radius: 2px;
+    text-align: center;
+}
+    
+.seperator span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+    
+.signature {
+    margin-top: 30px;
+}
+
+
+/* -------------------------------------
+		BODY
+------------------------------------- */
+table.body-wrap {
+	width: 100%;
+	padding: 20px;
+}
+
+table.body-wrap .container {
+	border: 1px solid #f0f0f0;
+}
+
+
+/* -------------------------------------
+		FOOTER
+------------------------------------- */
+table.footer-wrap {
+	width: 100%;	
+	clear: both!important;
+}
+
+.footer-wrap .container p {
+	font-size: 12px;
+	color: #666;
+	
+}
+
+table.footer-wrap a {
+	color: #999;
+}
+
+
+/* -------------------------------------
+		TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	line-height: 1.1;
+	margin-bottom: 15px;
+	color: #000;
+	margin: 40px 0 10px;
+	line-height: 1.2;
+	font-weight: 200;
+}
+
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 22px;
+}
+
+p, ul, ol {
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+ul li, ol li {  
+	margin-left: 5px;
+	list-style-position: inside;
+}
+    
+ul {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* ---------------------------------------------------
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display: block!important;
+	max-width: 600px!important;
+	margin: 0 auto!important; /* makes it centered */
+	clear: both!important;
+}
+
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container {
+	padding: 20px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	max-width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+	width: 100%;
+}
+
+</style>
+</head>
+
+<body bgcolor="#f6f6f6">
+
+<!-- body -->
+<table class="body-wrap">
+	<tr>
+		<td></td>
+		<td class="container" bgcolor="#FFFFFF">
+
+			<!-- content -->
+			<div class="content">
+			<table>
+				<tr>
+					<td>
+                        <img src="http://f.cl.ly/items/382X2B2E0N0G1N0J2q3U/Screen%20Shot%202014-05-14%20at%2014.00.36.png">
+						<h1>20th May 2014</h1>
+                        
+                        <h2>Top news</h2>
+                        
+                        <ul>
+                            <li><a href="#article-one">Scientists: We've found the biggest dinosaur ever</a></li>
+                            <li><a href="#article-two">US justice department charges Chinese with hacking</a></li>
+                            <li><a href="#article-three">Scientists discover how to turn light into matter after 80-year quest</a></li>
+                        </ul>
+                        
+                        <div class="seperator"><span>1</span></div>
+                        
+                        <article id="article-one">
+                            <h2>Scientists: We've found the biggest dinosaur ever
+    </h2>
+                            <img src="http://timedotcom.files.wordpress.com/2014/05/mvd6613716.jpg?w=1100">
+                            <p></p>
+                            <ul>
+                                <li>The paleontologists who found it say it's the biggest ever found and thus the biggest creature ever to have walked the earth, reports the BBC.</li>
+                                <li>Based on its thigh bones, the dinosaur was 130 feet long and 65 feet tall, and at 85 tons, it was the weight of 14 African elephants. </li>
+                                <li>The creature, which doesn't have a name yet, is thought to be a new species of titanosaur within the larger sauropod group. </li>
+                                <li>The huge herbivore lived in the forests of Patagonia between 95 and 100 million years ago, the team said.</li>
+                                
+                            </ul>
+                            
+                            <table>
+                                <tr>
+                                    <td class="padding">
+                                        <p><a href="http://www.mosttalked.com/#uk/science/751860/Scientists-discover-how-to-turn-light-into-matter-after-80year-quest" class="btn-primary" target="_blank">Read more</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </article>
+                        
+                        <div class="seperator"><span>2</span></div>
+                        
+                        <article id="article-two">
+                            <h2>US justice department charges Chinese with hacking
+
+    </h2>
+                            <img src="http://static01.nyt.com/images/2014/05/19/world/americas/20CYBER2/20CYBER2-superJumbo.jpg">
+                            <p></p>
+                            <ul>
+                                <li>The US has charged five Chinese army officers with hacking into private-sector American companies in a bid for competitive advantage, in the first cyber-espionage case of its kind.</li>
+                                <li>US prosecutors say the officers stole trade secrets and internal documents from five companies and a labour union.</li>
+                                <li>China denied the charges and warned the case would harm US-China relations.</li>
+                                <li>"The alleged hacking appears to have been conducted for no reason other than to advantage state-owned companies and other interests in China, at the expense of businesses here in the United States," Mr Holder said.</li>
+                                <li>FBI officials said the hacking in the years 2006-14 caused "significant losses" at the companies and that there were likely many more victims.</li>
+                            </ul>
+                            
+                            <a href="https://twitter.com/kevinmitnick/status/468472432878436352"><img src="http://f.cl.ly/items/0v3D3P2a2J0Z360K2U3Z/Screen%20Shot%202014-05-20%20at%2000.28.01.png"/></a>
+                            
+                            <a href="https://twitter.com/HFACDemocrats/status/468428763555188737"><img src="http://f.cl.ly/items/1m1R2j0O3U23270g0e3g/Screen%20Shot%202014-05-20%20at%2000.30.31.png"/></a>
+                            
+                            <table>
+                                <tr>
+                                    <td class="padding">
+                                        <p><a href="http://www.mosttalked.com/#uk/world/752561/US-justice-department-charges-Chinese-with-hacking" class="btn-primary" target="_blank">Read more</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </article>
+                        
+                        <div class="seperator"><span>3</span></div>
+                        
+                        <article id="article-three">
+                            <h2>Scientists discover how to turn light into matter after 80-year quest
+
+    </h2>
+                            <img src="http://o.aolcdn.com/hss/storage/midas/2b8421498c9147a8b6ea9c67fae3edd3/200134314/star-trek-voyager-replicator.jpg">
+                            <p></p>
+                            <ul>
+                                <li>Imperial College London physicists have discovered how to create matter from light - a feat thought impossible when the idea was first theorised 80 years ago.</li>
+                                <li>Breit and Wheeler suggested that it should be possible to turn light into matter by smashing together only two particles of light (photons), to create an electron and a positron – the simplest method of turning light into matter ever predicted. </li>
+                                <li>The new research, published in Nature Photonics, shows for the first time how Breit and Wheeler's theory could be proven in practice.</li>
+                                <li>This experiment would recreate a process that was important in the first 100 seconds of the universe and that is also seen in gamma ray bursts, which are the biggest explosions in the universe and one of physics' greatest unsolved mysteries.</li>
+                                
+                            </ul>
+                            
+                            <table>
+                                <tr>
+                                    <td class="padding">
+                                        <p><a href="http://www.mosttalked.com/#uk/science/751860/Scientists-discover-how-to-turn-light-into-matter-after-80year-quest" class="btn-primary" target="_blank">Read more</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </article>
+                        
+<!--
+                        <article id="article-three">
+                            <h2>
+    </h2>
+                            <img src="">
+                            <p></p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            
+                            <table>
+                                <tr>
+                                    <td class="padding">
+                                        <p><a href="" class="btn-primary" target="_blank">Read more</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </article>
+-->
+                        
+                        <div class="seperator"><span></span></div>
+                        
+                        <h1>That's all for today!</h1>
+                        
+                        <p>If you want to be notified of these news as they occur, <a href="http://twitter.com/MostTalkedLive">follow @MostTalkedLive on Twitter!</a></p>
+                        
+                        <h2>Can we do anything better?</h2>
+                        <p>We want you the receive the best possible news digest, let us know what you want to see: <a href="mailto:team@parallelbrains.com?Subject=Newsletter feedback" target="_top">team@parallelbrains.com</a></p>
+                        
+						<p class="signature">Lots of love,</p>
+                        <p>Bilsay, Deniz, Omer</p>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<!-- /content -->
+			
+		</td>
+		<td></td>
+	</tr>
+</table>
+<!-- /body -->
+
+<!-- footer -->
+<!-- disabling footer as mailchimp adds one already
+<table class="footer-wrap">
+	<tr>
+		<td></td>
+		<td class="container">
+			
+			<div class="content">
+				<table>
+					<tr>
+						<td align="center">
+							<p>Don't like these emails? <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+		</td>
+		<td></td>
+	</tr>
+</table>
+end of disable -->
+<!-- /footer -->
+
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+</body>
+</html>
