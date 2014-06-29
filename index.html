@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MostTalked.com Daily Digest</title>
+<style>
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 600px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100%!important;
+  height: 100%;
+}
+
+
+/* -------------------------------------
+    ELEMENTS
+------------------------------------- */
+a {
+  color: #348eda;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #348eda;
+  border: solid #348eda;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #aaa;
+  border: solid #aaa;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.padding {
+  padding: 10px 0;
+}
+
+.seperator {
+    margin-top: 20px;
+    height: 2em;
+    background-color: #2ED5E4;
+    border-radius: 2px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.seperator span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.signature {
+    margin-top: 30px;
+}
+
+.button {
+  border: 2px solid #e74c3c;
+  background-color: transparent;
+  border-radius: 8px;
+  width: 50%;
+  margin-left: 22.5%;
+  margin-top: 20px;
+  color: #e74c3c;
+  padding: 8px 0px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.newsletter-input-group {
+  width: 50%;
+  margin-top: 30px;
+  line-height: 24px;
+  margin-left: 22.5%;
+}
+
+
+/* -------------------------------------
+    BODY
+------------------------------------- */
+table.body-wrap {
+  width: 100%;
+  padding: 20px;
+}
+
+table.body-wrap .container {
+  border: 1px solid #f0f0f0;
+}
+
+
+/* -------------------------------------
+    FOOTER
+------------------------------------- */
+table.footer-wrap {
+  width: 100%;
+  clear: both!important;
+}
+
+.footer-wrap .container p {
+  font-size: 12px;
+  color: #666;
+
+}
+
+table.footer-wrap a {
+  color: #999;
+}
+
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  color: #000;
+  margin: 40px 0 10px;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 22px;
+}
+
+p, ul, ol, label, input {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+ul li, ol li {
+  margin-left: 5px;
+  list-style-position: inside;
+}
+
+ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/* ---------------------------------------------------
+    RESPONSIVENESS
+    Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block!important;
+  max-width: 600px!important;
+  margin: 0 auto!important; /* makes it centered */
+  clear: both!important;
+}
+
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container {
+  padding: 20px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+  width: 100%;
+}
+
+</style>
+</head>
+
+<body bgcolor="#f6f6f6">
+
+<!-- body -->
+<table class="body-wrap">
+  <tr>
+    <td></td>
+    <td class="container" bgcolor="#FFFFFF">
+      <table>
+        <tr>
+          <td>
+            <h1>A preview of MostTalked.com Daily Digest</h1>
+            <p>Everyday we handpick top news and best tweets about those news, and manually create a newsletter looking just like the one below.</p>
+            <p>If you like what you see, subscribe below!</p>
+
+            <div id="mc_embed_signup">
+              <form action="http://mosttalked.us8.list-manage.com/subscribe/post?u=6a2a512b387e7a06a564964db&amp;id=1207661535" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                <div class="newsletter-input-group ">
+                  <label for="mce-EMAIL">Your email </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_6a2a512b387e7a06a564964db_1207661535" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td class="container" bgcolor="#FFFFFF">
+
+      <!-- content -->
+      <div class="content">
+      <table>
+        <tr>
+          <td>
+            <a href="http://www.mosttalked.com/" target="_blank"><img src="http://f.cl.ly/items/382X2B2E0N0G1N0J2q3U/Screen%20Shot%202014-05-14%20at%2014.00.36.png"></a>
+
+              <h1>14th May 2014</h1>
+
+                        <h2>Top news</h2>
+
+                        <ul>
+                            <li><a href="#article-one">Over 200 dead, many trapped in Turkish coal mine</a></li>
+                            <li><a href="#article-two">Boko Haram leader offers to free schoolgirls in exchange for prisoners</a></li>
+                            <li><a href="#article-three">Christopher Columbus Ship The Santa Maria May Have Been Found</a></li>
+                        </ul>
+
+                        <div class="seperator"><span>1</span></div>
+
+                        <article id="article-one">
+                            <h2>Over 200 dead, many trapped in Turkish coal mine
+    </h2>
+                            <img src="http://www.gannett-cdn.com/-mm-/8f6f4afb56eac803246991f59e97bc65feb5a853/c=70-0-1993-1447&r=x513&c=680x510/local/-/media/USATODAY/USATODAY/2014/05/14//1400082936002-turkey051414-010.jpg">
+                            <p></p>
+                            <ul>
+                                <li>Energy Minister Taner Yildiz said 787 people had been inside the mine at Soma in Manisa province when an electrical fault triggered the blast.</li>
+                                <li>Nearly 450 workers have been rescued, according to the mine operator. </li>
+                                <li>Three days of mourning have been declared by the government.</li>
+                                <li>Lignite coal mining is a major industry in the Soma area, helping to supply a nearby lignite-fired thermal power plant, but safety has long been a concern.</li>
+                                <li>An MP with Turkey's opposition CHP party has accused the government of rejecting a recent proposal for a parliamentary inquiry into mine accidents in Soma.</li>
+                            </ul>
+                            <blockquote class="twitter-tweet" lang="en"><p>Erdogan just compared <a href="https://twitter.com/search?q=%23Soma&amp;src=hash">#Soma</a> mine tragedy with coal mine accidents in 19th century England. Yes, you heard correct. <a href="https://twitter.com/search?q=%23Turkey&amp;src=hash">#Turkey</a></p>&mdash; Louis Fishman (@Istanbultelaviv) <a href="https://twitter.com/Istanbultelaviv/statuses/466566956527927297">May 14, 2014</a></blockquote>
+                            <blockquote class="twitter-tweet" lang="en"><p>Turkish mine explosion tragedy should have been averted <a href="http://t.co/FztKnqme27">http://t.co/FztKnqme27</a> <a href="https://twitter.com/search?q=%23WorkersRights&amp;src=hash">#WorkersRights</a> <a href="https://twitter.com/search?q=%23Turkey&amp;src=hash">#Turkey</a></p>&mdash; AmnestyInternational (@amnesty) <a href="https://twitter.com/amnesty/statuses/466678144217653249">May 14, 2014</a></blockquote>
+                            <blockquote class="twitter-tweet" lang="en"><p>PIC: <a href="https://twitter.com/WashingtonPoint">@WashingtonPoint</a>: People say man who is kicking mourning person in Soma is PM’s Spec Asst. <a href="https://twitter.com/YusufYerkel">@YusufYerkel</a> <a href="http://t.co/LWAwLH2AV1">pic.twitter.com/LWAwLH2AV1</a> <a href="https://twitter.com/search?q=%23Turkey&amp;src=hash">#Turkey</a></p>&mdash; NewsBreaker (@NewsBreaker) <a href="https://twitter.com/NewsBreaker/statuses/466627968249241600">May 14, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <table>
+                                <tr>
+                                    <td class="padding">
+                                        <p><a href="http://www.mosttalked.com/#uk/world/741732/An-explosion-at-a-mine-in-western-Turkey-has-left-157-workers-dead-and-75" class="btn-primary" target="_blank">Read more</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </article>
+
+                        <div class="seperator"><span>2</span></div>
+
+                        <article id="article-two">
+                            <h2>Boko Haram leader offers to free schoolgirls in exchange for prisoners
+    </h2>
+                            <img src="http://news.bbcimg.co.uk/media/images/74808000/jpg/_74808616_74808547.jpg">
+                            <p></p>
+                            <ul>
+                                <li>Boko Haram has released a video claiming to show the missing Nigerian schoolgirls, alleging the teenagers had converted to Islam and warning that they would not be released until all militant prisoners were freed.</li>
+                                <li>A total of 276 girls were abducted by Boko Haram on 14 April from the north-eastern town of Chibok, in Borno state, which has a sizeable Christian community. </li>
+                                <li>International efforts to trace the girls have widened in recent days. On Sunday, Israel joined the bid to find the hundreds of teenagers abducted from their dormitory in Nigeria's restive north-east.</li>
+                                <li>Britain, the US and France have already sent specialist teams and equipment to help Nigeria's military in the search concentrated in the remote north-east, which has been hit by five years of deadly violence.</li>
+                                <li>Boko Haram, whose name translates loosely from the Hausa language spoken widely in northern Nigeria as "western education is sin", has attacked schools, churches, government installations and, increasingly since 2009, civilians.</li>
+                            </ul>
+                            <blockquote class="twitter-tweet" lang="en"><p>Let us all join in prayer for the immediate release of the schoolgirls kidnapped in Nigeria.&#10;<a href="https://twitter.com/search?q=%23BringBackOurGirls&amp;src=hash">#BringBackOurGirls</a></p>&mdash; Pope Francis (@Pontifex) <a href="https://twitter.com/Pontifex/statuses/465189535672832000">May 10, 2014</a></blockquote>
+                            <blockquote class="twitter-tweet" lang="en"><p>Proud to support <a href="https://twitter.com/search?q=%23BringBackOurGirls&amp;src=hash">#BringBackOurGirls</a>. <a href="http://t.co/Ge5wDPzCAO">pic.twitter.com/Ge5wDPzCAO</a></p>&mdash; David Cameron (@David_Cameron) <a href="https://twitter.com/David_Cameron/statuses/465423756635418624">May 11, 2014</a></blockquote>
+                            <blockquote class="twitter-tweet" lang="en"><p>Nigerian international John Mikel Obi has lent his support to the <a href="https://twitter.com/search?q=%23BringBackOurGirls&amp;src=hash">#BringBackOurGirls</a> campaign. <a href="http://t.co/jr8ArcdC0p">pic.twitter.com/jr8ArcdC0p</a></p>&mdash; Chelsea FC (@chelseafc) <a href="https://twitter.com/chelseafc/statuses/466185303922053120">May 13, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <table>
+                                <tr>
+                                    <td class="padding">
+                                        <p><a href="http://www.mosttalked.com/#uk/world/738885/Nigeria-kidnapped-girls-shown-in-new-Boko-Haram-video" class="btn-primary" target="_blank">Read more</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </article>
+
+                        <div class="seperator"><span>3</span></div>
+
+                        <article id="article-three">
+                            <h2>Christopher Columbus Ship The Santa Maria May Have Been Found</h2>
+                            <img src="http://media.npr.org/assets/img/2014/05/13/santa_maria_wide-a427ce9db0aac9d9e04aa521762c6e80d383260e-s40-c85.jpg">
+                            <p></p>
+                            <ul>
+                                <li>It's been missing for more than 500 years, but now there are reports that the Santa Maria, the largest ship among the trio that made Christopher Columbus' first expedition to North America, may be found.</li>
+                                <li>"All the geographical, underwater topography and archaeological evidence strongly suggests that this wreck is Columbus' famous flagship, the Santa Maria," Clifford tells Britain's The Independent.</li>
+                                <li>Clifford is a well-known wreck hunter, having found the pirate ship and former slave vessel the Whydah, which sank off the coast of Cape Cod in 1717.</li>
+                                <li>The Santa Maria sank after hitting reefs off the Haitian coast around Christmas of 1492, months after arriving from Spain.</li>
+                                <li>Verifying the wreck's identity will be harder now than it would have been in 2003, when they returned recently, Clifford says "all the key visible diagnostic objects including the cannon had been looted by illicit raiders". </li>
+                            </ul>
+                            <blockquote class="twitter-tweet" lang="en"><p>Scientists may have discovered the remains of Christopher Columbus’ famous “Santa Maria” off the coast of Haiti: <a href="http://t.co/Byg0bteTlI">http://t.co/Byg0bteTlI</a></p>&mdash; Chelsea Clinton (@ChelseaClinton) <a href="https://twitter.com/ChelseaClinton/statuses/466334040334036992">May 13, 2014</a></blockquote>                            <table>
+              <tr>
+                <td class="padding">
+                  <p><a href="http://www.mosttalked.com/#uk/science/740560/Christopher-Columbus-Ship-The-Santa-Maria-May-Have-Been-Found" class="btn-primary" target="_blank">Read more</a></p>
+                </td>
+              </tr>
+            </table>
+                        </article>
+
+                        <div class="seperator"><span></span></div>
+
+                        <h1>That's all for today!</h1>
+
+                        <p>If you want to be notified of these news as they occur, <a href="http://twitter.com/MostTalkedLive">follow @MostTalkedLive on Twitter!</a></p>
+
+                        <h2>Can we do anything better?</h2>
+                        <p>We want you the receive the best possible news digest, let us know what you want to see: <a href="mailto:team@parallelbrains.com?Subject=Newsletter feedback" target="_top">team@parallelbrains.com</a></p>
+
+            <p class="signature">Lots of love,</p>
+                        <p>Bilsay, Deniz, Omer</p>
+          </td>
+        </tr>
+      </table>
+      </div>
+      <!-- /content -->
+
+    </td>
+
+    <td class="container" bgcolor="#FFFFFF">
+      <table>
+        <tr>
+          <td>
+            <h1>Do you like what you see? Subscribe now!</h1>
+
+            <div id="mc_embed_signup">
+              <form action="http://mosttalked.us8.list-manage.com/subscribe/post?u=6a2a512b387e7a06a564964db&amp;id=1207661535" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                <div class="newsletter-input-group ">
+                  <label for="mce-EMAIL">Your email </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_6a2a512b387e7a06a564964db_1207661535" tabindex="-1" value=""></div>
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td></td>
+  </tr>
+</table>
+<!-- /body -->
+
+<!-- footer -->
+<!-- disabling footer as mailchimp adds one already
+<table class="footer-wrap">
+  <tr>
+    <td></td>
+    <td class="container">
+
+      <div class="content">
+        <table>
+          <tr>
+            <td align="center">
+              <p>Don't like these emails? <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </td>
+    <td></td>
+  </tr>
+</table>
+end of disable -->
+<!-- /footer -->
+
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
